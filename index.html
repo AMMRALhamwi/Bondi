@@ -1,345 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bondi</title>
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./images/logo.png" />
 
-    <!-- Bootstrap CSS -->
+    <!-- link to bootstap toolkit (framwork) -->
     <link rel="stylesheet" href="./bootstap/bootstrap.min.css" />
-
-    <!-- Font Awesome Icons -->
+    <!-- fontawesome library -->
     <link rel="stylesheet" href="./fontAwesome/all.min.css" />
-
-    <!-- Google Font: Roboto -->
+    <!-- google fonts Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Custom Styles -->
+    <!-- master css file -->
     <link rel="stylesheet" href="./css/master.css" />
   </head>
   <body>
-    <!-- NAVBAR SECTION -->
+    <!-- begining of navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
-        <!-- Brand Logo -->
         <a class="navbar-brand" href="#">
-          <img src="./images/logo.png" alt="Bondi Logo" />
+          <img src="./images/logo.png" alt="" />
         </a>
-
-        <!-- Mobile Menu Toggler -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
-
-        <!-- Navbar Content -->
         <div class="collapse navbar-collapse" id="main">
-          <!-- Navigation Links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Servicess</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portofolio</a>
+              <a class="nav-link p-2 p-lg-3" href="#">Servicess</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+            </li>
           </ul>
-
-          <!-- Desktop Search Icon -->
-          <div class="search d-none d-lg-block">
+          <div class="search ps-3 pe-3 d-none d-lg-block">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-
-          <!-- Login Button -->
           <a href="" class="btn main-btn rounded-pill">Login</a>
         </div>
       </div>
     </nav>
-
-    <!-- HERO/LANDING SECTION -->
+    <!-- end of navbar -->
+    <!-- begining of landing -->
     <div
       class="landing text-light d-flex justify-content-center align-items-center"
     >
       <div class="text-center">
-        <h1>Tast the Creativty</h1>
-        <p class="fs-6 mb-4">We Make Awesome Graphic and Web Design</p>
+        <h1 class="fw-normal">Tast the Creativty</h1>
+        <p class="fs-6 text-white-50 mb-4">
+          We Make Awesome Graphic and Web Design
+        </p>
         <a href="" class="btn main-btn rounded-pill">Get Started</a>
       </div>
     </div>
-
-    <!-- FEATURES SECTION -->
+    <!-- end of landing -->
+    <!-- begining of features -->
     <div class="features text-center pt-5 pb-5">
       <div class="container">
-        <!-- Section Title -->
-        <div class="main-title position-relative">
-          <img src="./images/title.png" alt="Title Decoration" />
+        <div class="main-title mt-5 mb-5 position-relative">
+          <img class="mb-4" src="./images/title.png" alt="" />
           <h2>We Are Good At</h2>
-          <p class="text-uppercase">some of thsese stuff</p>
+          <p class="text-black-50 text-uppercase">some of thsese stuff</p>
         </div>
-
-        <!-- Features Grid -->
         <div class="row">
-          <!-- Feature Item -->
           <div class="col-md-6 col-lg-4">
             <div class="feat">
-              <!-- Icon with Number -->
               <div class="icon-holder position-relative">
-                <i class="fa-solid fa-1 number"></i>
-                <i class="fa-solid fa-pencil icon fa-4x"></i>
+                <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+                <i
+                  class="fa-solid fa-pencil position-absolute bottom-0 icon fa-4x"
+                ></i>
               </div>
-              <h4 class="text-uppercase">Graphic Design</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              <h4 class="mb-3 mt-3 text-uppercase">Graphic Design</h4>
+              <p class="text-black-50 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                rem nostrum eos corrupti doloremque illum dicta quisquam rerum
+                quibusdam, quam reprehenderit ad. Dolorum veniam delectus nemo
+                quae assumenda modi neque
+              </p>
             </div>
           </div>
-          <!-- Repeat for other features -->
+          <!-- two -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <div class="icon-holder position-relative">
+                <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+                <i
+                  class="fa-solid fa-tv position-absolute bottom-0 icon fa-4x"
+                ></i>
+              </div>
+              <h4 class="mb-3 mt-3 text-uppercase">Graphic Design</h4>
+              <p class="text-black-50 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                rem nostrum eos corrupti doloremque illum dicta quisquam rerum
+                quibusdam, quam reprehenderit ad. Dolorum veniam delectus nemo
+                quae assumenda modi neque
+              </p>
+            </div>
+          </div>
+          <!-- three -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feat">
+              <div class="icon-holder position-relative">
+                <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+                <i
+                  class="fa-solid fa-plug position-absolute bottom-0 icon fa-4x"
+                ></i>
+              </div>
+              <h4 class="mb-3 mt-3 text-uppercase">Graphic Design</h4>
+              <p class="text-black-50 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                rem nostrum eos corrupti doloremque illum dicta quisquam rerum
+                quibusdam, quam reprehenderit ad. Dolorum veniam delectus nemo
+                quae assumenda modi neque
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- PORTFOLIO SECTION -->
+    <!-- end of features -->
+    <!-- begining of our work -->
     <div class="our-work text-center pt-5 pb-5">
       <div class="container">
-        <!-- Section Title -->
-        <div class="main-title position-relative">
-          <img src="./images/title.png" alt="Title Decoration" />
-          <h2>We make this</h2>
-          <p class="text-uppercase">prepare to be amazed</p>
+        <div class="main-title mt-5 mb-5 position-relative">
+          <img class="mb-4" src="./images/title.png" alt="" />
+          <h2 class="text-capitalize">we make this</h2>
+          <p class="text-black-50 text-uppercase">prepare to be amazed</p>
         </div>
-
-        <!-- Filter Buttons -->
-        <ul class="list-unstyled d-flex justify-content-center">
-          <li class="active">all</li>
+        <ul
+          class="text-capitalize list-unstyled d-flex justify-content-center mt-5 mb-5"
+        >
+          <li class="active rounded-pill">all</li>
           <li>Design</li>
-          <li>Code</li>
-          <li>Photo</li>
-          <li>App</li>
+          <li>code</li>
+          <li>photo</li>
+          <li>app</li>
         </ul>
-
-        <!-- Portfolio Grid -->
         <div class="row">
-          <!-- Portfolio Item -->
           <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="box" data-work="application">
-              <img src="./images/team-1.png" alt="Project" class="img-fluid" />
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <!-- Repeat for other items -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="box mb-3 bg-white" data-work="application">
+              <img src="./images/team-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
         </div>
-
-        <!-- View More Button -->
-        <a href="" class="btn main-btn rounded-pill">i want more</a>
+        <div class="d-flex justify-content-center mt-5">
+          <a href="" class="btn main-btn rounded-pill text-uppercase"
+            >i want more</a
+          >
+        </div>
       </div>
     </div>
-
-    <!-- ABOUT US SECTION -->
+    <!-- end of our work -->
+    <!-- begining of stuff -->
     <div class="stuff pt-5">
       <div class="container">
-        <!-- Section Title -->
-        <div class="main-title text-center position-relative">
-          <img src="./images/title.png" alt="Title Decoration" />
-          <h2>some stuff about us</h2>
-          <p class="text-uppercase">the great team</p>
+        <div class="main-title text-center mt-5 mb-5 position-relative">
+          <img class="mb-4" src="./images/title.png" alt="" />
+          <h2 class="text-center text-capitalize">some stuff about us</h2>
+          <p class="text-black-50 text-uppercase">the great team</p>
         </div>
-
-        <!-- Description Text -->
-        <p class="description text-center mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit...
+        <p class="description text-center text-black-50 mb-5 m-auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          quaerat consequatur quasi molestiae nemo sed! Maiores, error. Nostrum
+          ipsa, eum qui maiores culpa, unde accusantium aperiam possimus
+          similique itaque commodi?
         </p>
-
-        <!-- Content Row -->
         <div class="row align-items-center">
-          <!-- Text Column -->
-          <div class="col-lg-4">
-            <h4>Retina Design</h4>
-            <p>Lorem ipsum dolor sit amet...</p>
-            <a href="" class="btn main-btn rounded-pill">oreder me one</a>
+          <div class="col-lg-4 mb-4 text-center text-md-start">
+            <div class="text">
+              <h4>Retina Design</h4>
+              <p class="text-black-50 fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+                culpa, perspiciatis tempore, delectus voluptates placeat nam
+                odit nulla ratione ut obcaecati? Dolor nam dolorem facere qui,
+                sed nesciunt exercitationem mollitia.
+              </p>
+              <p class="text-black-50 fs-6">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                quae sed ratione inventore nesciunt harum nulla dolores. Tempora
+                eius, explicabo quisquam, deleniti porro, illum repudiandae ipsa
+                error rerum nam est?
+              </p>
+              <a href="" class="btn main-btn rounded-pill text-uppercase"
+                >oreder me one</a
+              >
+            </div>
           </div>
-          <!-- Image Column -->
           <div class="col-lg-8">
-            <img src="./images/laptop.png" alt="Laptop" class="img-fluid" />
+            <div class="image text-center">
+              <img class="img-fluid" src="./images/laptop.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- TEAM SECTION -->
+    <!-- end of stuff -->
+    <!-- begining of our team -->
     <div class="team text-center pb-5 pt-5">
-      <div class="container">
-        <!-- Section Title -->
+      <div class="container pb-5 pt-5">
         <h2 class="fw-bold text-capitalize">meet the team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-
-        <!-- Team Grid -->
+        <p class="text-black-50 mb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+          tempore ullam quasi voluptatum non sequi similique, quo deleniti
+          animi. Magni consequatur veniam quisquam labore, quo veritatis
+          excepturi asperiores distinctio ipsam.
+        </p>
         <div class="row">
-          <!-- Team Member -->
+          <!-- box 1 -->
           <div class="col-md-6 col-lg-3">
             <div class="box bg-white">
-              <img src="./images/team-4.png" alt="Team Member" />
-              <h4 class="text-light">Ammar Alhamwi</h4>
-              <blockquote class="text-black-50">
-                i don't understand how we got by those troops...
+              <img class="img-fluid" src="./images/team-4.png" alt="" />
+              <h4 class="p-3 text-light">Ammar Alhamwi</h4>
+              <blockquote class="text-black-50 p-3 text-capitalize">
+                i don't understand how we got by those troops. i thought we were
+                dead
               </blockquote>
             </div>
           </div>
-          <!-- Repeat for other members -->
+          <!-- box 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="box bg-white">
+              <img class="img-fluid" src="./images/team-3.png" alt="" />
+              <h4 class="p-3 text-light">Ammar Alhamwi</h4>
+              <blockquote class="text-black-50 p-3">
+                i don't understand how we got by those troops. i thought we were
+                dead
+              </blockquote>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="box bg-white">
+              <img class="img-fluid" src="./images/team-2.png" alt="" />
+              <h4 class="p-3 text-light">Ammar Alhamwi</h4>
+              <blockquote class="text-black-50 p-3 text-capitalize">
+                i don't understand how we got by those troops. i thought we were
+                dead
+              </blockquote>
+            </div>
+          </div>
+          <!-- box 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="box bg-white">
+              <img class="img-fluid" src="./images/team-1.png" alt="" />
+              <h4 class="p-3 text-light">Ammar Alhamwi</h4>
+              <blockquote class="text-black-50 p-3 text-capitalize">
+                i don't understand how we got by those troops. i thought we were
+                dead
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- TECHNOLOGIES SECTION -->
+    <!-- end of our team -->
+    <!--  start techs -->
     <div class="techs pt-5 pb-5 text-center">
       <div class="container">
-        <div class="row">
-          <!-- Tech Logo -->
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <img src="./images/tech-1.png" alt="Technology" class="img-fluid" />
+        <div class="row align-items-center">
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img src="./images/tech-1.png" alt="" class="img-fluid" />
           </div>
-          <!-- Repeat for other logos -->
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img src="./images/tech-2.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img src="./images/tech-3.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img src="./images/tech-4.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img src="./images/tech-2.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+            <img src="./images/tech-1.png" alt="" class="img-fluid" />
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- CALL TO ACTION SECTION -->
+    <!--  end techs -->
+    <!-- start project -->
     <div class="project text-center pt-5 pb-5 text-light">
-      <h2>start your project now</h2>
-      <p>leave your description here and we will start the engine...</p>
-      <a href="" class="btn main-btn rounded-pill">start a project</a>
+      <h2 class="text-capitalize">start your project now</h2>
+      <p class="text-white-50 text-capitalize">
+        leave your description here and we will start the engine . Don't worry,
+        you can cancel at any given moment
+      </p>
+      <div class="d-flex justify-content-center mt-5 mb-5">
+        <a href="" class="btn main-btn rounded-pill text-uppercase"
+          >start a project</a
+        >
+      </div>
     </div>
-
-    <!-- BLOG SECTION -->
+    <!-- end project -->
+    <!-- begining of blog -->
     <div class="blog pt-5 pb-5">
       <div class="container">
-        <!-- Section Title -->
-        <div class="main-title text-center position-relative">
-          <img src="./images/title.png" alt="Title Decoration" />
-          <h2>read our blog</h2>
-          <p class="text-uppercase">new stories</p>
+        <div class="main-title text-center mt-5 mb-5 position-relative">
+          <img class="mb-4" src="./images/title.png" alt="" />
+          <h2 class="text-center text-capitalize">read our blog</h2>
+          <p class="text-black-50 text-uppercase">new stories</p>
         </div>
-
-        <!-- Blog Posts Grid -->
         <div class="row">
-          <!-- Blog Post -->
           <div class="col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/blog-1.jpg" alt="Blog Post" />
+              <img src="./images/blog-1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <span class="text-black-50">jan 16, 2025</span>
-                <h5 class="text-capitalize">some awesome blog</h5>
+                <h5 class="card-title text-capitalize">some awesome blog</h5>
               </div>
             </div>
           </div>
-          <!-- Repeat for other posts -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="./images/blog-2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="text-black-50">jan 16, 2025</span>
+                <h5 class="card-title text-capitalize">some awesome blog</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <img src="./images/blog-3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="text-black-50">jan 16, 2025</span>
+                <h5 class="card-title text-capitalize">some awesome blog</h5>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- View More Button -->
-        <a href="" class="btn main-btn rounded-pill">more stories</a>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+          <a href="" class="btn main-btn rounded-pill text-uppercase"
+            >more stories</a
+          >
+        </div>
       </div>
     </div>
-
-    <!-- NEWSLETTER SECTION -->
+    <!-- end of blog -->
+    <!-- start subsicribe -->
     <div class="subsicribe pt-5 pb-5 text-center text-md-start">
       <div class="container">
-        <form class="row align-items-center">
-          <!-- Newsletter Text -->
+        <form action="" class="row align-items-center">
           <div class="col-md-6 col-lg-3">
-            <div class="fw-bold fs-5">subsicribe to our newsletter:</div>
+            <div class="fw-bold fs-5 mb-3">subsicribe to our newsletter:</div>
           </div>
-          <!-- Email Input -->
-          <div class="col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7 mb-4">
             <input
+              class="w-100 text-light p-2 bg-transparent"
               type="text"
               placeholder="Enter Your Email Address"
-              class="w-100 p-2 bg-transparent"
             />
           </div>
-          <!-- Submit Button -->
           <div class="col-md-6 col-lg-2">
             <input type="submit" value="subsicribe" class="btn rounded-pill" />
           </div>
         </form>
       </div>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="pt-5 pb-5 text-white-50">
+    <!-- end subsicribe -->
+    <!-- start footer  -->
+    <footer class="pt-5 pb-5 text-white-50 text-center text-md-start">
       <div class="container">
         <div class="row">
-          <!-- About Column -->
           <div class="col-md-6 col-lg-4">
-            <img src="./images/logo.png" alt="Footer Logo" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <div class="copyright">
-              designed by <span>Graphberry</span> and programmed by
-              <span>Ammar Alhamwi</span>
-              <div>&copy;2025</div>
-              <span class="cm">Bondi Inc</span>
+            <div class="info mb-5">
+              <img src="./images/logo.png" class="mb-4" alt="" />
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                error laborum nobis debitis minima eveniet quibusdam saepe
+                distinctio consectetur tempora mollitia, voluptatum repellat
+                pariatur quidem eius voluptate eum voluptates iste!
+              </p>
+              <div class="copyright">
+                designed by <span>Graphberry</span> and programmed by
+                <span>Ammar Alhamwi</span>
+                <div>&copy;2025</div>
+                <span class="cm">Bondi Inc</span>
+              </div>
             </div>
           </div>
-
-          <!-- Links Column 1 -->
           <div class="col-md-6 col-lg-2">
-            <h5 class="text-light">Links</h5>
-            <ul class="list-unstyled">
-              <li>Home</li>
-              <li>Our Servicess</li>
-              <li>Portofolio</li>
-              <!-- More links -->
-            </ul>
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Home</li>
+                <li>Our Servicess</li>
+                <li>Portofolio</li>
+                <li>Testimonials</li>
+                <li>Support</li>
+                <li>Terms and Conditions</li>
+              </ul>
+            </div>
           </div>
-
-          <!-- Links Column 2 -->
           <div class="col-md-6 col-lg-2">
-            <h5 class="text-light">Links</h5>
-            <ul class="list-unstyled">
-              <li>Sing In</li>
-              <li>Register</li>
-              <li>About Us</li>
-              <!-- More links -->
-            </ul>
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li>Sing In</li>
+                <li>Register</li>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
           </div>
-
-          <!-- Contact Column -->
           <div class="col-md-6 col-lg-4">
-            <h5 class="text-light">Contact Us</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            <a href="" class="btn main-btn rounded-pill">ammar@gmail.com</a>
-
-            <!-- Social Media Icons -->
-            <ul class="d-flex list-unstyled">
-              <li>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-              </li>
-            </ul>
+            <div class="contact">
+              <h5 class="text-light">Contact Us</h5>
+              <p class="lh-lg mt-3 mb-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Provident tempora excepturi modi perferendis voluptas. Accusamus
+                odit ab sit eligendi, officiis deleniti cumque magni nostrum
+                provident officia debitis aliquid saepe optio.
+              </p>
+              <a href="" class="btn rounded-pill main-btn w-100"
+                >ammar@gmail.com</a
+              >
+              <ul class="d-flex mt-5 list-unstyled gap-5 ms-5">
+                <li>
+                  <a href="" class="d-block text-light"
+                    ><i
+                      class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="d-block text-light"
+                    ><i
+                      class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="d-block text-light"
+                    ><i
+                      class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" class="d-block text-light"
+                    ><i
+                      class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <!-- end footer  -->
 
-    <!-- SCRIPTS -->
     <script src="./bootstap/bootstrap.bundle.min.js"></script>
     <script src="./fontAwesome/all.min.js"></script>
     <script src="./js/main.js"></script>
